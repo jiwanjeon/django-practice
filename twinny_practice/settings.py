@@ -14,6 +14,7 @@ from pathlib        import Path #기존에 settings.py 에 있는 코드
 from my_settings    import DATABASES, SECRET_KEY
 import pymysql
 
+
 # Fake PyMySQL's version and install as MySQLdb
 # https://adamj.eu/tech/2020/02/04/how-to-use-pymysql-with-django/
 pymysql.version_info = (1, 4, 2, "final", 0)
@@ -21,7 +22,6 @@ pymysql.install_as_MySQLdb()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
@@ -45,7 +45,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'corsheaders',
-    'product'
+    'product',
+    'owners',
+    
 ]
 
 MIDDLEWARE = [
