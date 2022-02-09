@@ -1,5 +1,9 @@
 # Django Practice
 
+##
+
+3개의 브랜치 : feature/crud & owner & movie에서 각각 과제 확인 가능
+
 
 ## 🚀 학습 목표
 
